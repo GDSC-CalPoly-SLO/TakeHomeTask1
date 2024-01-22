@@ -1,26 +1,9 @@
 let colors = [
-  "aqua",
-  "aquamarine",
-  "beige",
-  "chocolate",
-  "coral",
-  "crimson",
-  "gold",
-  "indigo",
-  "ivory",
-  "khaki",
-  "lavender",
-  "maroon",
-  "navy",
-  "olive",
-  "orchid",
-  "plum",
-  "salmon",
-  "sienna",
-  "tan",
-  "teal",
-  "turquoise",
-  "violet",
+  "aqua", "aquamarine", "beige", "chocolate", "coral",
+  "crimson", "gold", "indigo", "ivory", "khaki",
+  "lavender", "maroon", "navy", "olive", "orchid",
+  "plum", "salmon", "sienna", "tan", "teal", "turquoise",
+  "violet"
 ]
 let color = colors[0];
 let i = 0;
@@ -34,6 +17,7 @@ const feedback = document.getElementById("feedback");
 
 guessBtn.addEventListener("click", () => {
   let guess = nameInput.value.toLowerCase();
+  nameInput.value = "";
   if (guess === color) {
     feedback.innerHTML = "Good job!";
     feedback.style.color = "green";
