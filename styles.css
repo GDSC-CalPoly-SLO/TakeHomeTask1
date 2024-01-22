@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin: auto;
+  width: 20vw;
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 20vw;
+}
+
+#box {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 2rem;
+  background: aqua;
+  margin: 1rem;
+}
+
+.flex-col button,
+.flex-col input {
+  width: 100%;
+  text-align: center;
+  height: 2rem;
+  margin: 0.25rem 0;
+}
+
+button {
+  font-weight: bold;
+}
